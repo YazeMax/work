@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site de compra</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://s.zst.com.br/cms-assets/2024/04/iphones-coloridos.webp");
+            background-size: cover;
+            background-position: center;
+            color: white; /* Definindo a cor do texto como branco */
+        }
+
+        h1 {
+            color: white; /* Definindo a cor do título como branco */
+            text-align: center; /* Centralizando o título */
+            margin-top: 50px; /* Adicionando margem superior */
+        }
+
+        p {
+            color: white; /* Definindo a cor do parágrafo como branco */
+            text-align: center; /* Centralizando o parágrafo */
+        }
+
+        form {
+            max-width: 400px; /* Definindo a largura máxima do formulário */
+            margin: 0 auto; /* Centralizando o formulário horizontalmente */
+            padding: 20px; /* Adicionando espaçamento interno */
+            background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+            border-radius: 10px; /* Borda arredondada */
+        }
+
+        label, select, input[type="text"], input[type="email"], input[type="tel"], input[type="number"], button {
+            display: block; /* Exibindo os elementos em bloco */
+            margin-bottom: 15px; /* Adicionando margem inferior */
+            width: 100%; /* Largura igual a 100% */
+            padding: 10px; /* Adicionando espaçamento interno */
+            font-size: 16px; /* Aumentando o tamanho da fonte */
+            border-radius: 5px; /* Borda arredondada */
+            border: none; /* Removendo a borda */
+            background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+            color: #333; /* Definindo a cor do texto */
+        }
+
+        button {
+            background-color: #007bff; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            cursor: pointer; /* Alterando o cursor para indicar interatividade */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Compra Conosco</h1>
+    <p>Se você está em busca dos mais recentes telefones, veio ao lugar certo. Compre agora e aproveite todas as incríveis funcionalidades que só um iPhone/Samsung pode oferecer!</p>
+    <form action="/comprar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        
+        <label for="modelo">Modelo do iPhone:</label>
+        <select id="modelo" name="modelo">
+            <option value="iphone11">iPhone 11</option>
+            <option value="iphone12">iPhone 12</option>
+            <option value="iphone13">iPhone 13</option>
+        </select>
+        
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
+        
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
